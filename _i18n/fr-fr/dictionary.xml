@@ -5,7 +5,6 @@
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">Les limitations connues identifient les plateformes, les périphériques ou les fonctions qui ne sont pas pris en charge par cette version du produit, ou qui ne fonctionnent pas correctement avec elle. Examinez attentivement ces limites.</block>
   <block id="fc5c1a5c8028c4da4d0b0de1a9b1df3d" category="doc">Restrictions applicables dans tous les fournisseurs de cloud</block>
   <block id="a20ea8590a5bc20c473682a1138198a0" category="paragraph">Cloud Volumes ONTAP s'applique à tous les fournisseurs cloud : AWS, Azure et Google Cloud.</block>
-  <block id="cbc4bd981852b46f0fbf6e6a6d4ed5af" category="section-title">Le déploiement Cloud Volumes ONTAP ne doit pas être modifié depuis la console de votre fournisseur cloud</block>
   <block id="9baac3e3e045ecc1a8ffecb16253a5d1" category="paragraph">Toute modification de la configuration d'un système Cloud Volumes ONTAP depuis la console de votre fournisseur cloud entraîne une configuration non prise en charge. Toute modification des ressources Cloud Volumes ONTAP créés et gérées par Cloud Manager peut avoir un impact sur la stabilité du système et la capacité de Cloud Manager à gérer le système.</block>
   <block id="871cdf07a10d1cc27cb3166e7a820a66" category="section-title">Les disques et les agrégats doivent être gérés depuis Cloud Manager</block>
   <block id="dbdb55d3acfbb139cd66db544b19d738" category="paragraph">Tous les disques et agrégats doivent être créés et supprimés directement de Cloud Manager. Vous ne devez pas effectuer ces actions à partir d'un autre outil de gestion. Cela peut avoir un impact sur la stabilité du système, entraver la possibilité d'ajouter des disques à l'avenir et générer potentiellement des frais de fournisseur de cloud redondant.</block>
@@ -377,9 +376,6 @@
   <block id="0066e8873a17823db601b98ebbc37dd2" category="section-title">Limitations de LA HAUTE DISPONIBILITÉ</block>
   <block id="b1969fa9ebe4dd2003618adb77082978" category="paragraph">Les paires HAUTE DISPONIBILITÉ ne sont pas prises en charge dans certaines régions.</block>
   <block id="d91c9372e1fdf74d651217f1a36e518b" category="inline-link">Affichez la liste des régions Azure prises en charge</block>
-  <block id="1e6996b39daf779b565c50c8411fbc8d" category="paragraph"><block ref="8e36f0f32d75ebd3c7851e726c538544" category="inline-link-rx"></block>.</block>
-  <block id="e4f5b6f59db7bfa0e08c02262ddbd654" category="section-title">Le paiement à l'utilisation n'est pas disponible pour les partenaires de FST</block>
-  <block id="f2ff5834d93c258f0fc4ad6cf6a17942" category="paragraph">Si vous êtes un partenaire de fournisseur de solutions cloud Microsoft, vous ne pouvez pas déployer Cloud Volumes ONTAP Explore, Standard ou Premium car les abonnements avec paiement à l'utilisation ne sont pas disponibles pour les partenaires d'un FST. Vous devez acheter une licence et déployer Cloud Volumes ONTAP BYOL.</block>
   <block id="6a8a2e92f318dbd4f6a8e47b03350d4d" category="summary">Cloud Volumes ONTAP présente des limites de configuration du stockage dans Azure pour des opérations fiables. Pour des performances optimales, ne configurez pas votre système aux valeurs maximales.</block>
   <block id="e622ddac1a96836929babb5b993749ba" category="doc">Limites de stockage dans Azure</block>
   <block id="e6607992aca7a2cd8b89f152b0cf553d" category="section-title">Limite des disques et du Tiering en fonction de la taille des machines virtuelles</block>
@@ -679,4 +675,10 @@
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">Toute la documentation de Cloud Manager</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
   <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">Cloud ONTAP</block>
+  <block id="2819feead2b07762a4465189ab8b2f52" category="paragraph-title">Pour une paire HA, la capacité autorisée est-elle limitée par nœud ou par paire HA entière ?</block>
+  <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">Dans le cas d'une paire haute disponibilité, les données en miroir sont-elles prises en compte par rapport à la limite de capacité sous licence ?</block>
+  <block id="04e02f6b2c0d8cc75f029fa0d4d1378f" category="section-title">Le déploiement Cloud Volumes ONTAP ne doit pas être modifié depuis la console de votre fournisseur cloud</block>
+  <block id="2f9882645b2c32820ad085240bacb763" category="paragraph-title">Pour la haute disponibilité, la capacité de licence est-elle limitée par nœud ou pour la paire HA entière ?</block>
+  <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">Pour un système haute disponibilité dans AWS, est-ce que les données en miroir sont prises en compte avec la limite de capacité ?</block>
+  <block id="8e36f0f32d75ebd3c7851e726c538544" category="paragraph"><block ref="8e36f0f32d75ebd3c7851e726c538544" category="inline-link-rx"></block></block>
 </blocks>
