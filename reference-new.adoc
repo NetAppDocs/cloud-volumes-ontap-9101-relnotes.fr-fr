@@ -16,7 +16,7 @@ summary: Cloud Volumes ONTAP 9.10.1 comprend un certain nombre de nouvelles fonc
 [role="lead"]
 Cloud Volumes ONTAP 9.10.1 comprend un certain nombre de nouvelles fonctionnalités et améliorations.
 
-D'autres fonctionnalités et améliorations sont également introduites dans les dernières versions de Cloud Manager. Voir la https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Notes de version de Cloud Manager"^] pour plus d'informations.
+D'autres fonctionnalités et améliorations sont également introduites dans les dernières versions de BlueXP. Voir la https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Notes de mise à jour BlueXP"^] pour plus d'informations.
 
 
 
@@ -40,7 +40,7 @@ https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downl
 
 == 9.10.1 P3 (15 mai 2022)
 
-Le correctif 9.10.1 P3 est désormais disponible pour Cloud Volumes ONTAP dans Microsoft Azure si vous disposez d'un connecteur exécutant la version 3.9.13 ou ultérieure. Cloud Manager vous invite à mettre à niveau vos systèmes existants vers cette version de correctif.
+Le correctif 9.10.1 P3 est désormais disponible pour Cloud Volumes ONTAP dans Microsoft Azure si vous disposez d'un connecteur exécutant la version 3.9.13 ou ultérieure. BlueXP vous invitera à mettre à niveau vos systèmes existants vers cette version de correctif.
 
 https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.10.1P3["Consultez la liste des bugs corrigés dans le patch P3"^] (Identifiant du site du support NetApp requis).
 
@@ -58,7 +58,7 @@ Ces méthodes de facturation à la capacité vous permettent de payer à l'heure
 Si vous disposez déjà d'un abonnement dans Cloud Marketplace, vous êtes également automatiquement abonné à ces nouvelles offres. Vous pouvez choisir un mode de charge à la capacité lorsque vous déployez un nouvel environnement de travail Cloud Volumes ONTAP.
 
 +
-Si vous êtes un nouveau client, Cloud Manager vous invitera à vous inscrire lors de la création d'un environnement de travail.
+Si vous êtes un nouveau client, BlueXP vous invitera à vous abonner lorsque vous créez un nouvel environnement de travail.
 
 * Les licences par nœud via AWS et Google Cloud Marketplaces sont obsolètes et ne sont plus disponibles pour les nouveaux abonnés. Cela inclut les contrats annuels et les abonnements horaires (Explore, Standard et Premium).
 +
@@ -74,13 +74,13 @@ link:concept-licensing.html["En savoir plus sur les options de licence pour Clou
 
 La version GA de Cloud Volumes ONTAP 9.10.1 est désormais disponible. La version GA inclut des correctifs.
 
-Cloud Manager vous invite à mettre à niveau les systèmes existants exécutant l'une des versions suivantes : 9.10.1 RC1, 9.10.0 ou 9.9.1.
+BlueXP vous invitera à mettre à niveau les systèmes existants qui exécutent l'une des versions suivantes : 9.10.1 RC1, 9.10.0 ou 9.9.1.
 
 
 
 == Prise en charge d'autres types de VM (2 janvier 2021)
 
-Cloud Volumes ONTAP, intégré à la version 3.9.14 de Cloud Manager, est désormais pris en charge avec les types de VM suivants dans Microsoft Azure, à partir de la version 9.10.1 :
+Intégré à la version 3.9.14 de BlueXP, Cloud Volumes ONTAP est désormais pris en charge avec les types de VM suivants dans Microsoft Azure, à partir de la version 9.10.1 :
 
 * E4ds_v4
 * E8ds_v4
@@ -112,7 +112,7 @@ az account set -s AZURE_SUBSCRIPTION_NAME_OR_ID
 az feature register --name EnableHighAvailabilityMode --namespace Microsoft.Network
 az provider register -n Microsoft.Network
 ----
-Cloud Manager vous invite à entrer ces informations dans un message d'action requise pour les systèmes Cloud Volumes ONTAP 9.10.1 sur lesquels la fonctionnalité doit être activée par un abonnement Azure.
+BlueXP vous invite à fournir ces informations dans un message action requise pour les systèmes Cloud Volumes ONTAP 9.10.1 où la fonctionnalité doit être activée sur un abonnement Azure.
 
 Notez ce qui suit :
 
@@ -131,9 +131,9 @@ Nous avons amélioré la sécurité de la création d'images ONTAP et de la séc
 
 === Prise en charge des abonnements Keystone Flex
 
-Dans la version 3.9.13 de Cloud Manager, vous pouvez désormais utiliser un abonnement Keystone Flex avec des paires haute disponibilité Cloud Volumes ONTAP. Un abonnement Keystone Flex offre un service basé sur un abonnement avec paiement à l'utilisation. Vous bénéficiez d'une expérience de cloud hybride transparente pour les modèles de consommation des dépenses d'exploitation, de préférence en matière de CapEx ou de leasing à l'avance.
+Dans le cadre de la version 3.9.13 de Connector, vous pouvez désormais utiliser un abonnement Keystone Flex avec des paires haute disponibilité Cloud Volumes ONTAP. Un abonnement Keystone Flex offre un service basé sur un abonnement avec paiement à l'utilisation. Vous bénéficiez d'une expérience de cloud hybride transparente pour les modèles de consommation des dépenses d'exploitation, de préférence en matière de CapEx ou de leasing à l'avance.
 
-Un abonnement Keystone Flex est pris en charge avec toutes les nouvelles versions de Cloud Volumes ONTAP que vous pouvez déployer depuis Cloud Manager.
+Un abonnement Keystone Flex est pris en charge avec toutes les nouvelles versions de Cloud Volumes ONTAP que vous pouvez déployer à partir de BlueXP.
 
 
 
@@ -145,9 +145,9 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-security
 
 
 
-== Version requise de Cloud Manager Connector
+== Version requise du connecteur BlueXP
 
-Cloud Manager Connector doit exécuter la version 3.9.13 ou ultérieure pour déployer de nouveaux systèmes Cloud Volumes ONTAP 9.10.1 et mettre à niveau les systèmes existants vers la version 9.10.1.
+Le connecteur BlueXP doit exécuter la version 3.9.13 ou ultérieure pour déployer de nouveaux systèmes Cloud Volumes ONTAP 9.10.1 et mettre à niveau les systèmes existants vers la version 9.10.1.
 
 
 TIP: Les mises à niveau automatiques du connecteur sont activées par défaut, vous devez donc exécuter la dernière version.
@@ -156,10 +156,10 @@ TIP: Les mises à niveau automatiques du connecteur sont activées par défaut, 
 
 == Notes de mise à niveau
 
-* La mise à niveau d'Cloud Volumes ONTAP doit être effectuée depuis Cloud Manager. Vous ne devez pas mettre à niveau Cloud Volumes ONTAP à l'aide de System Manager ou de l'interface de ligne de commandes. Cela peut affecter la stabilité du système.
-* Vous pouvez effectuer la mise à niveau vers Cloud Volumes ONTAP 9.10.1 à partir de la version 9.10.0 et de la version 9.9.1. Cloud Manager vous invite à mettre à niveau les systèmes Cloud Volumes ONTAP éligibles vers la version 9.10.1.
+* Les mises à niveau de Cloud Volumes ONTAP doivent être effectuées depuis BlueXP. Vous ne devez pas mettre à niveau Cloud Volumes ONTAP à l'aide de System Manager ou de l'interface de ligne de commandes. Cela peut affecter la stabilité du système.
+* Vous pouvez effectuer la mise à niveau vers Cloud Volumes ONTAP 9.10.1 à partir de la version 9.10.0 et de la version 9.9.1. BlueXP vous invite à mettre à niveau les systèmes Cloud Volumes ONTAP éligibles vers la version 9.10.1.
 +
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Découvrez comment effectuer la mise à niveau lorsque Cloud Manager vous informe"^].
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Découvrez comment effectuer la mise à niveau lorsque BlueXP vous avertit"^].
 
 * La mise à niveau d'un système à un nœud unique permet de mettre le système hors ligne pendant 25 minutes au cours desquelles les E/S sont interrompues.
 * La mise à niveau d'une paire haute disponibilité s'effectue sans interruption et les E/S sont continues. Au cours de ce processus de mise à niveau sans interruption, chaque nœud est mis à niveau en tandem afin de continuer à traiter les E/S aux clients.
